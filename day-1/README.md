@@ -21,3 +21,28 @@ To include the React library using a CDN, you can add the following script tags 
 ```html
 <script src="https://unpkg.com/react/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+```
+
+### 2. What is Cross-origin?
+
+**Cross-Origin** refers to requests made from one origin (domain, protocol, or port) to a different origin.
+
+## Key Points
+
+1. **Same-Origin Policy**: A security measure that restricts how documents or scripts loaded from one origin can interact with resources from another origin.
+
+2. **Cross-Origin Requests**: Occur when a web application requests resources from a different origin (e.g., `https://example.com` requesting from `https://api.example.org`).
+
+3. **CORS (Cross-Origin Resource Sharing)**: A protocol that allows servers to specify who can access their resources by adding specific HTTP headers.
+   - **Example Headers**:
+     - `Access-Control-Allow-Origin`: Specifies allowed origins.
+     - `Access-Control-Allow-Methods`: Specifies allowed HTTP methods.
+
+4. **Use Cases**: Common in fetching data from APIs, loading resources from CDNs, etc.
+
+5. **Security Implications**: Cross-origin requests can pose security risks (e.g., CSRF, XSS), requiring proper CORS implementation.
+
+## Example Scenario
+
+A JavaScript application on `https://myapp.com` trying to access an API at `https://api.example.com` will be blocked unless the API allows it with CORS headers.
+
