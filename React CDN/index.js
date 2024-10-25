@@ -28,7 +28,16 @@ let heading = React.createElement(
   "Hello World from React"
 );
 // console.log(heading) // It will be a react element object, not a html element
+//React.createElemnt('tag',{attribute in obj},children) //for multiple children pass it as an array of children
 
 let root = ReactDOM.createRoot(document.getElementById("root"));
+
+//If there is someting in the root element parent will be replaced not will append
+//After render this h1 tag will be no more in the root element
+{
+  /* <root>
+    <h1>First I'm present here</h1>
+</root> */
+}
 
 root.render(parent);

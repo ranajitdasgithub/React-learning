@@ -22,6 +22,11 @@ To include the React library using a CDN, you can add the following script tags 
 <script src="https://unpkg.com/react/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
 ```
+## Note: ## 
+The crossorigin attribute in the script tag enables CrossOrigin Resource Sharing (CORS) for loading external JavaScript
+files from different origin than the hosting web page. This
+allows the script to access resources from the server hosting
+the script, such as making HTTP requests or accessing data.
 
 ### 2. What is Cross-origin?
 
