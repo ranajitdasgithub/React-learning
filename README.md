@@ -50,4 +50,14 @@ the script, such as making HTTP requests or accessing data.
 ## Example Scenario
 
 A JavaScript application on `https://myapp.com` trying to access an API at `https://api.example.com` will be blocked unless the API allows it with CORS headers.
+---
+# Class 2 - Inginiting our App
 
+### 3. Difference between git and github?
+
+- Git: A version control system used for tracking changes in code locally. It allows you to manage source code history, create branches, and collaborate on projects.
+
+- GitHub: A web-based platform that hosts Git repositories online. It facilitates collaboration by providing features like issue tracking, pull requests, and project management tools.
+
+**Key Difference**
+- Git is the tool for version control; GitHub is a platform that uses Git for sharing and collaborating on code. You can use Git independently of GitHub, but GitHub relies on Git.
