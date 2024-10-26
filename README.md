@@ -50,7 +50,9 @@ the script, such as making HTTP requests or accessing data.
 ## Example Scenario
 
 A JavaScript application on `https://myapp.com` trying to access an API at `https://api.example.com` will be blocked unless the API allows it with CORS headers.
+
 ---
+
 # Class 2 - Inginiting our App
 
 ### 3. Difference between git and github?
@@ -61,3 +63,8 @@ A JavaScript application on `https://myapp.com` trying to access an API at `http
 
 **Key Difference**
 - Git is the tool for version control; GitHub is a platform that uses Git for sharing and collaborating on code. You can use Git independently of GitHub, but GitHub relies on Git.
+
+### 4. What is NPM?
+
+npm (Node Package Manager) is a package manager for JavaScript, primarily used with Node.js. It allows developers to install, manage, and share libraries and tools. With a vast repository of open-source packages, npm simplifies dependency management and project configuration through the package.json file.
+
