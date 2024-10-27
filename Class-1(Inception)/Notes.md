@@ -46,3 +46,6 @@
 - Consistent hashing
 - Code spliting
 - Error handling(Better way to display error in console)
+
+
+for better understanding
