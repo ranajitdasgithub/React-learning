@@ -21,3 +21,9 @@
   "example-package": "^1.2.3", // Allows 1.2.x and 1.x.x, but not 2.x.x
   "another-package": "~1.2.3"   // Allows 1.2.x, but not 1.3.x
 }
+
+🚀 Notes:
+- package-lock.json file track all the version of the dependency
+- When I install parcel in node_modules there is lot of file also, because parcel have lot of dependency and their dependency has lot. so that all the dependency file exist in node_modules
+* This is known as Transitive dependency *
+Node_modules is pack of all dependency
