@@ -22,7 +22,9 @@ To include the React library using a CDN, you can add the following script tags 
 <script src="https://unpkg.com/react/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
 ```
-## Note: ## 
+
+## Note:
+
 The crossorigin attribute in the script tag enables CrossOrigin Resource Sharing (CORS) for loading external JavaScript
 files from different origin than the hosting web page. This
 allows the script to access resources from the server hosting
@@ -39,6 +41,7 @@ the script, such as making HTTP requests or accessing data.
 2. **Cross-Origin Requests**: Occur when a web application requests resources from a different origin (e.g., `https://example.com` requesting from `https://api.example.org`).
 
 3. **CORS (Cross-Origin Resource Sharing)**: A protocol that allows servers to specify who can access their resources by adding specific HTTP headers.
+
    - **Example Headers**:
      - `Access-Control-Allow-Origin`: Specifies allowed origins.
      - `Access-Control-Allow-Methods`: Specifies allowed HTTP methods.
@@ -62,6 +65,7 @@ A JavaScript application on `https://myapp.com` trying to access an API at `http
 - GitHub: A web-based platform that hosts Git repositories online. It facilitates collaboration by providing features like issue tracking, pull requests, and project management tools.
 
 **Key Difference**
+
 - Git is the tool for version control; GitHub is a platform that uses Git for sharing and collaborating on code. You can use Git independently of GitHub, but GitHub relies on Git.
 
 ### 4. What is NPM?
@@ -87,28 +91,27 @@ Ease of Use: NPM provides a straightforward command-line interface, making it ea
 In summary, NPM is essential for managing dependencies, leveraging community resources, automating tasks, and streamlining the development process in JavaScript and Node.js projects.
 
 ### 5. Why we use package.json file?
+
 1. Introduction:
-"package.json is a fundamental file used in Node.js and JavaScript projects that serves multiple key functions."
+   "package.json is a fundamental file used in Node.js and JavaScript projects that serves multiple key functions."
 
 2. Dependency Management:
-"It lists all the project's dependencies, allowing developers to easily install them with a single command using npm. This ensures that everyone working on the project has the same libraries and versions."
+   "It lists all the project's dependencies, allowing developers to easily install them with a single command using npm. This ensures that everyone working on the project has the same libraries and versions."
 
 3. Project Metadata:
-"The file contains important metadata about the project, such as its name, version, description, author, and license. This information is useful for documentation and for others who may work with or use the project."
+   "The file contains important metadata about the project, such as its name, version, description, author, and license. This information is useful for documentation and for others who may work with or use the project."
 
 4. Scripts:
-"package.json allows developers to define scripts for common tasks, such as building, testing, or starting the application. This makes it easier to automate repetitive tasks and standardize workflows across the team."
+   "package.json allows developers to define scripts for common tasks, such as building, testing, or starting the application. This makes it easier to automate repetitive tasks and standardize workflows across the team."
 
 5. Version Control:
-"It specifies the versions of dependencies, which helps maintain consistency and avoid issues caused by breaking changes in libraries. This is crucial for ensuring that the application behaves the same way in different environments."
+   "It specifies the versions of dependencies, which helps maintain consistency and avoid issues caused by breaking changes in libraries. This is crucial for ensuring that the application behaves the same way in different environments."
 
 6. Configuration:
-"The file can also include configuration settings for various tools and libraries used in the project, centralizing management and making it easier to adjust settings."
+   "The file can also include configuration settings for various tools and libraries used in the project, centralizing management and making it easier to adjust settings."
 
 7. Publishing:
-"Finally, if you're developing a package to share, package.json is essential for publishing to the npm registry, as it provides all necessary information about the package."
+   "Finally, if you're developing a package to share, package.json is essential for publishing to the npm registry, as it provides all necessary information about the package."
 
 8. Conclusion:
-"In summary, package.json is vital for managing dependencies, providing project metadata, automating tasks, ensuring version control, and facilitating package sharing, making it an indispensable part of modern JavaScript development."
-
-
+   "In summary, package.json is vital for managing dependencies, providing project metadata, automating tasks, ensuring version control, and facilitating package sharing, making it an indispensable part of modern JavaScript development."

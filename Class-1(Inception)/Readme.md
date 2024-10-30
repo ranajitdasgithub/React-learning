@@ -1,3 +1,5 @@
+# Class 2 - Inginiting our App
+
 🚀 Notes:
 
 - package.json is a configuration of our npm.
@@ -36,8 +38,6 @@
 - npm i react react-dom
 - add 'main':'index.js'
 
-🚀 Note:
-
 # Parcel
 
 - Dev build
@@ -57,6 +57,26 @@
 - Tree shaking (remove unnecessary code)
 
 🚀 Parcel production build notes:
+
 - remove the "main": "App.js", from package.json as for this build we directly provide the entry point file
 - ⭐️ npx parcel build index.html ⭐️
 
+🚀 Notes:
+
+- We can use 'browserlists' to add the in whicn browser version our website will be supported
+
+# Class-3 Laying the foundation
+
+🚀 Notes:
+
+- add a 'start':'parcel index.html' to start our project using ⭐️ npm start or npm run start ⭐️
+- ⭐️ npm run build ⭐️ as build add in the package.json script file
+
+🚀 JSX
+
+- JSX is part of react not exactly react, react code also use using normal js file
+- JSX is different than html
+- in js file if we write-> let jsxHeading = <h1>Hello from JSX</h1>
+- This not exacly html code, its a jsx code, we can say html like syntax
+- JSX is not a pure javascript code
+- Babel is convert jsx code to react code(compile or we can say transpile)
