@@ -1,7 +1,7 @@
 # React Hooks
 
 1. useState
-2. useEffect
+2. useEffect (how its works behind the scene)
 3. useContext
 4. useReducer
 5. useMemo
@@ -62,3 +62,20 @@ How?
 - query and params
 - dynamic routing
 
+# Testing
+- unit testing
+
+# Async task (Promises)
+- api calls (axios vs normal fetch)
+- event
+
+# Reusability
+Modularity
+Readable
+Testability
+
+# Performance
+- lazy loading (shimer ui)
+- asset optimization
+- bundlers
+- cdn and server label
