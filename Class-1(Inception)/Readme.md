@@ -80,3 +80,17 @@
 - This not exacly html code, its a jsx code, we can say html like syntax
 - JSX is not a pure javascript code
 - Babel is convert jsx code to react code(compile or we can say transpile)
+
+🚀 React components
+
+1. Functional component
+
+- A function returns a JSX code or we can say react element or bunch of react elements is called Functional component.
+
+2. Class based component
+
+- Component composition(component inside another component)
+
+🚀 Notes:
+JSX (transpiled by Babel) ⇒ React.createElement ⇒ ReactElement
+⇒ JS Object ⇒ HTML Element(render)
