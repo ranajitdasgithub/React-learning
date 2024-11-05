@@ -51,3 +51,4 @@ the script, such as making HTTP requests or accessing data.
 
 A JavaScript application on `https://myapp.com` trying to access an API at `https://api.example.com` will be blocked unless the API allows it with CORS headers.
 
+
