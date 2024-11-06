@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="title">Title will be shown here</h1>
+    <input type="text" class="search" />
+</body>
+
+<script>
+    // You can add your JavaScript code here
+    const title = document.querySelector('.title');
+    const search = document.querySelector('.search');
+
+    // Debouncing function without apply
+
+    function debounce(func, delay) {
+        let timeout;
+        return function (...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func(...args), delay); // Directly pass args
+        };
+    }
+    
+    // Show title
+    function fetchSearchResults(query) {
+        title.innerText = query;
+    }
+
+    // Create a debounced version of the fetchSearchResults function
+    const debouncedFetchSearchResults = debounce(fetchSearchResults, 500);
+
+    search.addEventListener('input', (e) => {
+        debouncedFetchSearchResults(e.target.value); // Call the debounced function
+    });
+</script>
+
+</html>

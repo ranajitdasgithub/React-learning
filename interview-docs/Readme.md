@@ -100,4 +100,4 @@ prototype function api, prototype chain, prototype chain, prototype inheritance,
 
 event loop, microservies queqe,
 debouncing & throttling
-recurring
+recurring and currying(infinte currying)
