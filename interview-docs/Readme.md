@@ -101,3 +101,5 @@ prototype function api, prototype chain, prototype chain, prototype inheritance,
 event loop, microservies queqe,
 debouncing & throttling
 recurring and currying(infinte currying)
+
+# How fetch works?
