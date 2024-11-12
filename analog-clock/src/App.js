@@ -1,11 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
-import AnalogClock from "./components/AnalogClock";
+
+import './App.css';
+import AnalogClock from './components/AnalogClock';
 
 function App() {
   return (
     <div className="App">
-      <AnalogClock />
+      <AnalogClock/>
     </div>
   );
 }
