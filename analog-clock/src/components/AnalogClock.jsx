@@ -4,11 +4,8 @@ import "../styles/analog.css";
 
 const AnalogClock = () => {
   const [time, setTime] = useState(new Date());
-  const [timezone, setTimezone] = useState("Asia/Kolkata");
-
-  function handleTimeZone() {
-    console.log("Handle timezone click");
-  }
+  const selectedZone = "Asia/Kolkata";
+  const [timezone, setTimezone] = useState(selectedZone);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -34,7 +31,7 @@ const AnalogClock = () => {
   return (
     <div>
       <h1>Analog Clock</h1>
-      <TimeZone handleZone={handleTimeZone} />
+      <TimeZone selectedZone={selectedZone} handleSetTimezone={setTimezone} />
       <div className="clock">
         <div
           className="minutes"
