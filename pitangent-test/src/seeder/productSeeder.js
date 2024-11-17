@@ -22,10 +22,10 @@ import { faker } from "@faker-js/faker";
 export function generateProducts() {
   return {
     id: faker.string.uuid(),
-    name: faker.internet.username(),
+    name: faker.commerce.productName(),
     image: faker.image.avatar(),
   };
 }
 export const products = faker.helpers.multiple(generateProducts, {
-  count: 5,
+  count: 100,
 });

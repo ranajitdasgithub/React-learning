@@ -1,9 +1,11 @@
 import { products } from "../seeder/productSeeder";
+
 export const REGISTER = "REGISTER";
 export const LOGIN = "LOGIN";
 export const FETCH_PRODUCTS = "FETCH_PRODUCTS";
 export const ADD_COMMENT = "ADD_COMMENT";
 
+// Action creators
 export const register = (userData) => ({
   type: REGISTER,
   payload: userData,

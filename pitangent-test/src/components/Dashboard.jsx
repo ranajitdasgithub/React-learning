@@ -1,13 +1,13 @@
 // src/components/Dashboard.js
-
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts, addComment } from '../redux/actions';
+import "../styles/dashboard.css";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts, addComment } from "../redux/actions";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.product.products);
-  const user = {username:'Ranajit'}//useSelector((state) => state.auth.user);
+  const user = { username: "Ranajit" }; //useSelector((state) => state.auth.user);
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -22,23 +22,21 @@ const Dashboard = () => {
   }
 
   return (
-    <div>
+    <div className="dashboard-container">
       <h1>Welcome, {user.username}</h1>
       <h2>Dashboard</h2>
-      <div>
+      <div className="product-grid">
         {products.map((product) => (
-          <div key={product.id}>
+          <div className="product-card" key={product.id}>
             <h2>{product.name}</h2>
             <img src={product.image} alt={product.name} />
             <div>
               {product.comments?.map((comment, index) => (
-                <div key={index}>
-                  <p>{comment}</p>
-                </div>
+                <p key={index}>{comment}</p>
               ))}
               <button
                 onClick={() =>
-                  handleAddComment(product.id, prompt('Add a comment:'))
+                  handleAddComment(product.id, prompt("Add a comment:"))
                 }
               >
                 Add Comment

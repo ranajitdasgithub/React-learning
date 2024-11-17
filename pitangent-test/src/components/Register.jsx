@@ -1,5 +1,5 @@
 // src/components/Register.js
-
+import "../styles/register.css";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { register } from "../redux/actions";
@@ -19,23 +19,26 @@ const Register = () => {
   };
 
   return (
-    <form onSubmit={handleRegister}>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        required
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <button type="submit">Register</button>
-    </form>
+    <>
+      <h2>Register page</h2>
+      <form onSubmit={handleRegister}>
+        <input
+          type="email"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <button type="submit">Register</button>
+      </form>
+    </>
   );
 };
 
