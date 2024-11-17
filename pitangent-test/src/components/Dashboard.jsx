@@ -16,6 +16,11 @@ const Dashboard = () => {
   const handleAddComment = (productId, comment) => {
     dispatch(addComment(productId, comment));
   };
+  const handleDeleteProduct = (productId) => {
+    if (window.confirm("Are you sure you want to delete this product?")) {
+      // dispatch(deleteProduct(productId)); // Ensure your action is set up for deleting a product
+    }
+  };
 
   if (!user) {
     return <div>Please log in to see the dashboard.</div>;
@@ -40,6 +45,9 @@ const Dashboard = () => {
                 }
               >
                 Add Comment
+              </button>
+              <button onClick={() => handleDeleteProduct(product.id)}>
+                Delete Product
               </button>
             </div>
           </div>
