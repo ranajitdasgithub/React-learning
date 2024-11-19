@@ -96,3 +96,44 @@ JSX (transpiled by Babel) ⇒ React.createElement ⇒ ReactElement
 ⇒ JS Object ⇒ HTML Element(render)
 
 # Class-4 Talk less make project
+
+## 🚀 React Keys: Best Practices
+
+In React, the `key` prop is essential for optimizing the rendering of lists. It helps React identify which items have changed, are added, or are removed, leading to improved performance and better state management.
+
+## Why Use `key` in React?
+
+1. **Performance Optimization**:
+
+   - React uses keys to determine which elements have changed, allowing it to minimize re-renders. This results in a more efficient update process for lists.
+
+2. **Maintaining Component State**:
+
+   - Keys help React track the state of individual components. For example, in a list of input fields, using keys ensures that the state of each input is preserved even if the list is reordered.
+
+3. **Avoiding Unnecessary Re-renders**:
+   - By providing unique keys, React can skip re-rendering components that haven't changed, enhancing application performance.
+
+## Why It's Bad Practice to Use Index as Key
+
+1. **Stability Issues**:
+
+   - If the list is modified (e.g., items are reordered or removed), using the index can lead to incorrect behavior. React may misidentify components, causing bugs.
+
+2. **State Loss**:
+
+   - Components that rely on their indices for keys may lose or incorrectly assign state when the list order changes. For example, moving an input field can result in it displaying the wrong value.
+
+3. **Performance Issues**:
+   - Using indices can lead to unnecessary re-renders, as React may not recognize that the actual data has changed, only the indices.
+
+## Best Practices
+
+- Always use a stable and unique identifier (like a database ID) as a key when rendering lists in React.
+- Avoid using indices as keys to ensure correct behavior, state management, and optimal performance.
+
+## Conclusion
+
+Using keys properly is crucial for building efficient and reliable React applications. Following best practices regarding keys will help you maintain component state and improve overall performance.
+
+# Episode-05 | Let's Get Hooked
