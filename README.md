@@ -224,3 +224,4 @@ Here, the **Dashboard** component is “wrapped” with the **withAuthentication
 This explanation covers the essentials, giving a clear picture of what HOCs are, why they’re useful, and how they’re implemented. Let me know if you need any further clarification!
 
 ---
+react course
