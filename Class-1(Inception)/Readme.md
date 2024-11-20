@@ -137,3 +137,18 @@ In React, the `key` prop is essential for optimizing the rendering of lists. It 
 Using keys properly is crucial for building efficient and reliable React applications. Following best practices regarding keys will help you maintain component state and improve overall performance.
 
 # Episode-05 | Let's Get Hooked
+
+🚀 Default export/import
+
+- export default Component
+- ✨ import Component from 'path'
+
+🚀 Named export/import
+
+- export const name = 'ranajit'
+- export const sum = ()=> {return 1+2}
+- ✨ import {name,sum} from 'path'
+
+React  fiber, react reconcialiation, react diffing
+
+https://github.com/acdlite/react-fiber-architecture
