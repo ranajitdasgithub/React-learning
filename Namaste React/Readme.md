@@ -149,6 +149,10 @@ Using keys properly is crucial for building efficient and reliable React applica
 - export const sum = ()=> {return 1+2}
 - ✨ import {name,sum} from 'path'
 
-React  fiber, react reconcialiation, react diffing
+React fiber, react reconcialiation, react diffing
 
 https://github.com/acdlite/react-fiber-architecture
+
+# Episode-06 | Exploring the World
+
+shimmer UI(fake skeleton of UI)
