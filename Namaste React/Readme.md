@@ -155,4 +155,5 @@ https://github.com/acdlite/react-fiber-architecture
 
 # Episode-06 | Exploring the World
 
+condition rendering (Rendering with some condition)
 shimmer UI(fake skeleton of UI)
