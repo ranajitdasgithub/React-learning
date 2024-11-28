@@ -157,3 +157,5 @@ https://github.com/acdlite/react-fiber-architecture
 
 condition rendering (Rendering with some condition)
 shimmer UI(fake skeleton of UI)
+
+🚀 Whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
