@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import UserClass from "./UserClass";
 
 //React element=> React element js-object=>render as a html element
 const heading = React.createElement(
@@ -23,6 +24,7 @@ let HeadingComponent2 = () => {
       {Title()}
       <Title />
       <h1 className="heading">React component using return</h1>
+      <UserClass />
     </>
   );
 };

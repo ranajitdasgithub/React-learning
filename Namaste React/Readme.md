@@ -170,3 +170,16 @@ There is 2 types routing in web apps
 2.  server side routing (network call and page refresh happen )
 
 # Episode-08 | Let's Get Classy
+
+- class component
+
+```javascript
+import React from "react";
+
+class UserClass extends React.Component {
+  render() {
+    return <h1>Class component</h1>;
+  }
+}
+export default UserClass;
+```
