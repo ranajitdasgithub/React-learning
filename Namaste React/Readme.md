@@ -159,3 +159,14 @@ condition rendering (Rendering with some condition)
 shimmer UI(fake skeleton of UI)
 
 🚀 Whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
+
+🚀 Use corsproxy.io for cors issue
+
+# Episode-07 | Finding the Path
+
+There is 2 types routing in web apps
+
+1.  client side routing
+2.  server side routing (network call and page refresh happen )
+
+# Episode-08 | Let's Get Classy
