@@ -24,7 +24,7 @@ let HeadingComponent2 = () => {
       {Title()}
       <Title />
       <h1 className="heading">React component using return</h1>
-      <UserClass />
+      <UserClass name="Ranajit" place="Kolkata" />
     </>
   );
 };
