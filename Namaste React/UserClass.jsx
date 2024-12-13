@@ -48,9 +48,22 @@ class UserClass extends React.Component {
         </button>
         {/* About component */}
         <About car="BMW" />
+        <About car="Audi" />
       </>
     );
   }
 }
 
 export default UserClass;
+
+/* 
+  Userclass(parent) constructor called
+  Userclass(parent) render called
+    About(child1 BMW) constructor called
+    About(child1 BMW) render called
+    About(child2 Audi) constructor called
+    About(child2 Audi) render called
+    About(child1 BMW) didMount called
+    About(child2 Audi) didMount called
+  Userclass(parent) didMount called 
+*/

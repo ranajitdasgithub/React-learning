@@ -182,7 +182,6 @@ import React from "react";
 //    return (<></>)
 // }
 
-
 class UserClass extends React.Component {
   constructor(props) {
     super(props);
@@ -205,8 +204,12 @@ export default UserClass;
 
 ✨ Loading actually means mouting the component in React
 
- ### 🚀 Mounting
+### 🚀 Mounting
+
 1. constructor()
 2. static getDerivedStateFromProps()
 3. render()
 4. componentDidMount() // Used for api calls
+
+🚀 React Lifecyle
+![Photo](Asset/life-cycle.png)
