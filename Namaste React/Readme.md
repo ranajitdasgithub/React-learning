@@ -175,6 +175,13 @@ There is 2 types routing in web apps
 
 ```javascript
 import React from "react";
+// 🚀 we can directly use Component after destructure from react
+// import {Component} from "react";
+// class About extends Component {
+// render(){
+//    return (<></>)
+// }
+
 
 class UserClass extends React.Component {
   constructor(props) {
@@ -195,4 +202,5 @@ class UserClass extends React.Component {
 
 export default UserClass;
 ```
+
 ✨ Loading actually means mouting the component in React
