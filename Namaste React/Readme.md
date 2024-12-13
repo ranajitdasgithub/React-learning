@@ -195,3 +195,4 @@ class UserClass extends React.Component {
 
 export default UserClass;
 ```
+✨ Loading actually means mouting the component in React
