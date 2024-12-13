@@ -204,3 +204,9 @@ export default UserClass;
 ```
 
 ✨ Loading actually means mouting the component in React
+
+ ### 🚀 Mounting
+1. constructor()
+2. static getDerivedStateFromProps()
+3. render()
+4. componentDidMount() // Used for api calls

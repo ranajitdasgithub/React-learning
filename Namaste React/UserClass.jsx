@@ -9,11 +9,16 @@ class UserClass extends React.Component {
       count: 0,
       count2: 10,
     };
+    console.log("Userclass constructor called");
   }
-
+  componentDidMount() {
+    console.log("Userclass component mounted");
+  }
   render() {
     const { name, place } = this.props; // We can destructure props like this
     const { count, count2 } = this.state;
+
+    console.log("userclass component render called");
     return (
       <>
         <h1>Class component</h1>
@@ -42,7 +47,7 @@ class UserClass extends React.Component {
           Decrement
         </button>
         {/* About component */}
-        <About />
+        <About car="BMW" />
       </>
     );
   }
