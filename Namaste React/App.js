@@ -25,8 +25,8 @@ let HeadingComponent2 = () => {
       {Title()}
       <Title />
       <h1 className="heading">React component using return</h1>
-      {/* <UserClass name="Ranajit" place="Kolkata" /> */} 
-      <UserClassApi/>
+      {/* <UserClass name="Ranajit" place="Kolkata" /> */}
+      <UserClassApi />
     </>
   );
 };

@@ -216,16 +216,36 @@ export default UserClass;
 
 🚀 ComponentDidUpdate()- This method is called after every update of the component. It is used to update the state of the component.
 
-/* 
+/\*
 ------- Mounting ------
+
 1. constructor()
 2. render()
 3. componentDidMount() // API calls
 4. this.state changes
 
 ------- Update ------
+
 1. render() with new state value
 2. componentDidUpdate()
-*/
+   \*/
 
 🚀 ComponentWillUnmount()- This method is called when the component is about to be removed from the DOM. It is used to remove the component.
+// It is used to cleanup the interval, timeout, event listeners etc.
+Example-
+
+```javascript
+import { Component } from "react";
+class UserClassApi extends Component {
+  async componentDidMount() {
+    this.timer = setInterval(() => {
+      console.log("Print after 1 sec");
+    }, 1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+  render() {}
+}
+export default UserClassApi;
+```
