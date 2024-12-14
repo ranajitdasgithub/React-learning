@@ -1,4 +1,5 @@
 import React from "react";
+import GrandChild from "./GrandChild";
 // import {Component} from "react";
 // class About extends Component { //we can directly use Component after destructure from react
 
@@ -8,8 +9,9 @@ class About extends React.Component {
     console.log("About component constructor called");
   }
 
-  componentDidMount() { //used for api calls
-    console.log("About component mounted"); 
+  componentDidMount() {
+    //used for api calls
+    console.log("About component mounted");
   }
 
   render() {
@@ -18,6 +20,7 @@ class About extends React.Component {
     return (
       <>
         <h1>About class child component: props {this.props.car}</h1>
+        <GrandChild />
       </>
     );
   }

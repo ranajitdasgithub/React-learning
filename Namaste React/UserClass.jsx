@@ -63,6 +63,8 @@ export default UserClass;
     About(child1 BMW) render called
     About(child2 Audi) constructor called
     About(child2 Audi) render called
+
+    <DOM updated in a single Batch>
     About(child1 BMW) didMount called
     About(child2 Audi) didMount called
   Userclass(parent) didMount called 
