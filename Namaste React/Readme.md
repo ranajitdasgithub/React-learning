@@ -213,3 +213,19 @@ export default UserClass;
 
 🚀 React Lifecyle
 ![Photo](Asset/life-cycle.png)
+
+🚀 ComponentDidUpdate()- This method is called after every update of the component. It is used to update the state of the component.
+
+/* 
+------- Mounting ------
+1. constructor()
+2. render()
+3. componentDidMount() // API calls
+4. this.state changes
+
+------- Update ------
+1. render() with new state value
+2. componentDidUpdate()
+*/
+
+🚀 ComponentWillUnmount()- This method is called when the component is about to be removed from the DOM. It is used to remove the component.
