@@ -272,3 +272,34 @@ const UserFunctionApi = () => {
 };
 export default UserFunctionApi;
 ```
+
+# Episode -09 | Optimizing our App
+
+🚀 Custom Hooks
+
+- Hooks are the utility functions
+- Custom hooks are the reusable functions
+- They are used to reuse the code for optimization
+- More readable, maintainble and testable
+- Example-
+
+```javascript
+import { useEffect, useState } from "react";
+
+const useRestaurantMenu = (resId) => {
+  const [resInfo, setResInfo] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  async function fetchData() {
+    const response = await fetch(
+      `https://api.example.com/restaurant/${resId}/menu`
+    );
+    const menus = await response.json();
+    setResInfo(menus.data);
+  }
+  return resInfo;
+};
+export default useRestaurantMenu;
+```

@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import UserClass from "./UserClass";
 import UserClassApi from "./UserClassApi";
+import useRestaurantMenu from "./utils/useRestaurantMenu";
 
 //React element=> React element js-object=>render as a html element
 const heading = React.createElement(
@@ -19,6 +20,8 @@ console.log(jsxHeading); //This will same as react element object
 let Title = () => <h1>React heading component using arrow function</h1>;
 //using return react component
 let HeadingComponent2 = () => {
+
+  // const restaurantInfo= useRestaurantMenu(resId); //custom hooks
   return (
     <>
       {/* //We can call the component as a function */}
