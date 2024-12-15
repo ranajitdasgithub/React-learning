@@ -4,7 +4,7 @@ import "../styles/navbar.css";
 const Navbar = () => {
   return (
     <nav>
-      <ul>
+      <ul className="flex justify-around col-red">
         <li>Home</li>
         <li>Grocery</li>
       </ul>

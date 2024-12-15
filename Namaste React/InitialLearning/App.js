@@ -39,7 +39,7 @@ let HeadingComponent2 = () => {
       <h3>Online Status : {onlineStatus ? "✅" : "🔴"}</h3>
       {Title()}
       <Title />
-      <h1 className="heading">React component using return</h1>
+      <h1 className="flex bg-pink-300">React component using return</h1>
       {/* <UserClass name="Ranajit" place="Kolkata" /> */}
       <UserClassApi />
     </>

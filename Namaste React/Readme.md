@@ -304,7 +304,7 @@ const useRestaurantMenu = (resId) => {
 export default useRestaurantMenu;
 ```
 
-# 🚀 Lazy loading
+## 🚀 Lazy loading
 
 - Lazy loading is a technique to load the components on demand.
 - It break our codes in chunks for better performance optimization.
@@ -321,3 +321,43 @@ const GroceryComponent = lazy(()=>import("./path/Grocery.jsx"));
 ```
 
 # Episode-10 | Jo Dikhta Hai, Vo Bikta Hai
+
+- Material UI
+- Ant design
+- Bootstrap
+- Chakra UI
+- Tailwind CSS
+- SCSS
+- Component style css
+  🚀 Tailwind css installtion
+
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
+
+content: ["./src/**/*.{html,js}"],
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+🚀 Tailwind css installation for parcel
+
+```bash
+npm install -D tailwindcss postcss
+npx tailwindcss init
+
+.postcssrc
+{
+  "plugins": {
+    "tailwindcss": {}
+  }
+}
+
+content: ["./src/**/*.{html,js}"],
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
