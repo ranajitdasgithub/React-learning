@@ -10,9 +10,9 @@ class UserClassApi extends Component {
     };
   }
   async componentDidMount() {
-    this.timer = setInterval(() => {
-        console.log("Print after 1 sec")
-    }, 1000);
+    // this.timer = setInterval(() => {
+    //     console.log("Print after 1 sec")
+    // }, 1000);  //don't forget to clear the interval on componentWillMount
     const data = await fetch("https://api.github.com/users/ranajitdasgithub");
     const users = await data.json();
     this.setState({
@@ -23,7 +23,7 @@ class UserClassApi extends Component {
     console.log("ComponentDidUpdate is called");
   }
   componentWillUnmount() {
-    clearInterval(this.timer)
+    // clearInterval(this.timer) //always clear the interval
     console.log("ComponentWillUnmount is called");
   }
   render() {

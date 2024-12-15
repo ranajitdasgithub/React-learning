@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import UserClass from "./UserClass";
 import UserClassApi from "./UserClassApi";
 import useRestaurantMenu from "./utils/useRestaurantMenu";
+import useOnlineStatus from "./utils/useOnlineStatus";
 
 //React element=> React element js-object=>render as a html element
 const heading = React.createElement(
@@ -20,11 +21,20 @@ console.log(jsxHeading); //This will same as react element object
 let Title = () => <h1>React heading component using arrow function</h1>;
 //using return react component
 let HeadingComponent2 = () => {
-
   // const restaurantInfo= useRestaurantMenu(resId); //custom hooks
+  const onlineStatus = useOnlineStatus();
+  if (!onlineStatus) {
+    return (
+      <>
+        <h3>Online Status : {onlineStatus ? "✅" : "🔴"}</h3>
+        <h1>You're offline!! Please check your internet connection</h1>
+      </>
+    );
+  }
   return (
     <>
       {/* //We can call the component as a function */}
+      <h3>Online Status : {onlineStatus ? "✅" : "🔴"}</h3>
       {Title()}
       <Title />
       <h1 className="heading">React component using return</h1>
