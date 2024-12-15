@@ -303,7 +303,21 @@ const useRestaurantMenu = (resId) => {
 };
 export default useRestaurantMenu;
 ```
+
 # 🚀 Lazy loading
+
 - Lazy loading is a technique to load the components on demand.
+- It break our codes in chunks for better performance optimization.
 - It is used to optimize the performance of the app.
 - ⭐️ Also we called it as Chunking, Code spliting, Dynamic bundling, on demand loading ⭐️
+
+```javascript
+import React, { lazy, Suspense } from "react";
+
+const GroceryComponent = lazy(()=>import("./path/Grocery.jsx"));
+<Suspense fallback={<h1>Loading....</h1>}> //We can add component insted of html tag
+  <GroceryComponent>
+</Suspense>
+```
+
+# Episode-10 | Jo Dikhta Hai, Vo Bikta Hai

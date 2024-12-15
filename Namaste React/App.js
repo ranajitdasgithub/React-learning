@@ -4,6 +4,7 @@ import UserClass from "./UserClass";
 import UserClassApi from "./UserClassApi";
 import useRestaurantMenu from "./utils/useRestaurantMenu";
 import useOnlineStatus from "./utils/useOnlineStatus";
+import Navbar from "./components/Navbar";
 
 //React element=> React element js-object=>render as a html element
 const heading = React.createElement(
@@ -33,6 +34,7 @@ let HeadingComponent2 = () => {
   }
   return (
     <>
+      <Navbar />
       {/* //We can call the component as a function */}
       <h3>Online Status : {onlineStatus ? "✅" : "🔴"}</h3>
       {Title()}
