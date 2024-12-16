@@ -361,3 +361,6 @@ content: ["./src/**/*.{html,js}"],
 @tailwind components;
 @tailwind utilities;
 ```
+⭐️ Ctrl + space = for suggestion from tailwind extention
+
+# Episode-11 | Data is the New Oil
