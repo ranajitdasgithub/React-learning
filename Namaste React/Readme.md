@@ -361,6 +361,9 @@ content: ["./src/**/*.{html,js}"],
 @tailwind components;
 @tailwind utilities;
 ```
+
 ⭐️ Ctrl + space = for suggestion from tailwind extention
 
 # Episode-11 | Data is the New Oil
+
+## 🚀 HOC- A Higher-Order Component is a function that takes a component as an argument and returns a new component that enhances the original component's functionality.
