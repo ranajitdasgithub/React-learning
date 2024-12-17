@@ -367,3 +367,4 @@ content: ["./src/**/*.{html,js}"],
 # Episode-11 | Data is the New Oil
 
 ## 🚀 HOC- A Higher-Order Component is a function that takes a component as an argument and returns a new component that enhances the original component's functionality.
+
