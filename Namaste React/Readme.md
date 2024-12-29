@@ -368,3 +368,47 @@ content: ["./src/**/*.{html,js}"],
 
 ## 🚀 HOC- A Higher-Order Component is a function that takes a component as an argument and returns a new component that enhances the original component's functionality.
 
+```javascript
+//Grocery
+const PromotedCard = withPromotedLabel(ProductCard);
+<div className="flex flex-wrap justify-center">
+  {products.map((product) =>
+    product.promoted ? (
+      <PromotedCard key={product.id} product={product} />
+    ) : (
+      <ProductCard key={product.id} product={product} />
+    )
+  )}
+</div>;
+
+//ProductCard
+//HOC - Higher Order Component, add the Promoted label in the Product card component
+//Input ProductCard => PromotedCard
+export const withPromotedLabel = (ProductCard) => {
+  return (product) => {
+    return (
+      <div className="relative">
+        <span className="absolute text-cyan-400 bg-slate-400 rounded-md top-[25px] left-3">
+          Best Seller
+        </span>
+        <ProductCard {...product} />
+      </div>
+    );
+  };
+};
+```
+
+### Data layer and UI layer
+
+- Data layer: State, Props
+- UI layer: JSX code mainly
+
+### React dev tools
+
+- **Components**: shows the component tree
+- **Profiler**: shows the performance of the app
+
+### 🚀 Controlled and uncontrolled component
+
+- Controlled component: state is controlled by the parent component
+- Uncontrolled component: state is controlled by the component itself
