@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import userContext from "../utils/UserContext";
 
 const ProductCard = ({ product }) => {
+  let { userName } = useContext(userContext);
+  console.log("username", userName);
+  
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
       <img className="w-full" src={product?.image} alt={product?.name} />

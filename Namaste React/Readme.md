@@ -410,5 +410,10 @@ export const withPromotedLabel = (ProductCard) => {
 
 ### 🚀 Controlled and uncontrolled component
 
-- Controlled component: state is controlled by the parent component
+- Controlled component: state is controlled by the parent component (Ex.- Children component state is controlled by parent component)
 - Uncontrolled component: state is controlled by the component itself
+- **Example**: `input` is a controlled component, `textarea` is an uncontrolled component
+
+### 🚀 Lifting the state up
+
+- When a child component needs to update the state of a parent component, we lift the state up
