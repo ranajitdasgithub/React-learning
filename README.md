@@ -254,3 +254,9 @@ This explanation covers the essentials, giving a clear picture of what HOCs are,
 ➤ Priority Handling:
 
 - To sum it up, the event loop first checks the microtasks queue. If it's empty, it moves to the callback queue. This ensures that critical tasks, like promises, are handled promptly.
+
+### Note:-
+```javascript
+     const newUrl = url.replace(/^http:/, "https:");
+     const path = new URL(url).pathname;
+```
